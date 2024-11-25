@@ -1,0 +1,128 @@
+/* Estilo fondo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Beige */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+header {
+    background-color: #1e3d58; /* Azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1e3d58; /* Azul oscuro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las etiquetas y campos de entrada */
+label {
+    font-size: 16px;
+    color: #1e3d58;
+}
+
+input {
+    width: 96%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #1e3d58;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #365f77;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e3d58;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.footer a:hover {
+    color: #f5f5dc;
+    text-decoration: underline;
+}
+
+.links {
+    display: flex; /* Usa flexbox para colocar los elementos en fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los enlaces */
+    margin-top: 30px; /* Espacio superior */
+}
+
+/* Estilos para los links */
+.links a {
+    display: inline-block; /* Se comporta como un botón */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #ffffff; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animaciones */
+}
+
+.links a[href*=""] {
+    background-color: #d9534f; /* Rojo para Eliminar */
+}
+
+.links a[href*="principal"] {
+    background-color: #5cb85c; /* Verde para Registrar */
+}
+
+/* Efectos al pasar el cursor */
+.links a:hover {
+    background-color: #333333; /* Oscurecer el fondo */
+    color: #f5f5dc; /* Cambiar el texto a beige */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Versión para pantallas pequeñas */
+@media (max-width: 768px) {
+    .links a {
+        font-size: 16px; /* Texto más pequeño */
+        padding: 8px 15px; /* Reducir espacio */
+    }
+}
